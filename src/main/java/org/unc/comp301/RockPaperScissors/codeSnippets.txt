@@ -23,6 +23,8 @@
 "|   (    /\n" +
 " \\______/"
 
+
+
 @Test
 public void rockTest(){
     //assertEquals(expected, actual);
@@ -30,7 +32,7 @@ public void rockTest(){
     System.out.println(rock);
     String expected = " _.-.-.-.\n;_|_|_|_|_\n|_|_|\\__  \\\n|    . '  |\n|   (    /\n \\______/";
 
-    assertEquals(expected, rock.getAscii());
+    assertEquals(expected, rock.toString());
 }
 
 @Test
@@ -39,7 +41,7 @@ public void paperTest(){
     Hand paper = new Paper();
     System.out.println(paper);
     String expected = "        _______\n  ____(____     \\\n (________       |\n(_________       |\n (________       |\n  (___________  /";
-    assertEquals(expected, paper.getAscii());
+    assertEquals(expected, paper.toString());
 }
 
 @Test
@@ -48,5 +50,5 @@ public void scissorsTest(){
     Hand scissors = new Scissors();
     System.out.println(scissors);
     String expected = "    .-.\n    | |    / )\n    | |   / /\n    | |  / /\n _.-| |_/ /\n; \\( \\   /\n|\\_)\\ \\  |\n|    ) \\ |\n|   (    /\n \\______/";
-    assertEquals(expected, scissors.getAscii());
+    assertEquals(expected, scissors.toString());
 }
