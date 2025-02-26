@@ -22,4 +22,6 @@ public class Paper extends AHand{
         return(other instanceof Rock);
     }
 
+
+
 }
