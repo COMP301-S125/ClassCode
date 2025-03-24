@@ -1,22 +1,20 @@
 package org.unc.comp301.Javadoc;
 
 /**
- * Example class shows how Javadoc can create documentation similar to the java API
+ * This is an example class for Javadoc
  *
- * @author Prof Prairie Goodwin
+ * @author Prairie Goodwin
  * @version 1.0
- *
  */
 public class Example {
-    /**
-     * Variables are private but important
-     */
+    /* this is a variable, noto a javadoc*/
     private int myInt = 5;
 
+
     /**
-     *This method has both a parameter and a return value
-     * @param anInt
-     * @return That is very very important.
+     * This is a method!  It does a thing!
+     * @param anInt is a meaningless integer.
+     * @return yup.  It's a string.
      */
     public String aMethod(int anInt){
         //A comment
@@ -24,26 +22,25 @@ public class Example {
     }
 
     /**
-     * An exception is thrown in this method!
-     * @return nothing.
-     * @throws Exception
+     * Beware! Here there be dragons
+     * @return absolutely nothing!
+     * @throws Exception that is important.
      */
     public String anException() throws Exception{
         throw new Exception("This is an exception");
     }
 
+
     /**
-     * Main method is currently empty.
-     * @param args exists to take arguments from the command line.
+     * This is a main method!
+     * @param args takes in arguments from the commandline
      */
     public static void main(String[] args){
-        //A comment
+        //Single comment
 
-        /*A
-        * multiline
-        * long
-        * comment
-        * */
+        /*
+         * multiline comments
+         */
     }
 
 }
