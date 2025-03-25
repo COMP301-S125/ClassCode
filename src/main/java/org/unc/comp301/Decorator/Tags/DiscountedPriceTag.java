@@ -16,4 +16,11 @@ public class DiscountedPriceTag implements PriceTag {
     public double getAmount() {
         return Math.max(tag.getAmount() - discount, 0);
     }
+
+    @Override
+    public PriceTag unwrap() {
+        return this.tag.unwrap();
+    }
+
+
 }

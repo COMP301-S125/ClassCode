@@ -17,4 +17,11 @@ public class PriceTagImpl implements PriceTag {
     public double getAmount() {
         return amount;
     }
+
+    @Override
+    public PriceTag unwrap() {
+        return this;
+    }
+
+
 }

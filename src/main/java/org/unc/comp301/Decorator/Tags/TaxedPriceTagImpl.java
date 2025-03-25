@@ -19,6 +19,11 @@ public class TaxedPriceTagImpl implements PriceTag {
         return pre_tax_tag.getAmount()+getTax();
     }
 
+    @Override
+    public PriceTag unwrap() {
+        return pre_tax_tag.unwrap();
+    }
+
     public double getTax() {
         return rate*pre_tax_tag.getAmount();
     }
@@ -26,4 +31,5 @@ public class TaxedPriceTagImpl implements PriceTag {
     public double getTaxRate() {
         return rate;
     }
+
 }
