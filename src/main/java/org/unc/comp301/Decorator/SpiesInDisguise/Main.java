@@ -13,13 +13,5 @@ public class Main {
 
     System.out.println(perry.getDescription());
 
-    System.out.println("Perry puts on his hat!");
-    perry.takeOffDisguise();
-
-    System.out.println(perry.getDescription());
-
-    System.out.println("Perry takes off his hat again");
-    perry.putOnDisguise();
-    System.out.println(perry.getDescription());
   }
 }
