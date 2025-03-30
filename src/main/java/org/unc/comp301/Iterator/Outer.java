@@ -1,4 +1,4 @@
-package org.unc.comp301;
+package org.unc.comp301.Iterator;
 
 class Outer {
     private String message = "Hello from Outer!";
