@@ -1,6 +1,4 @@
-package org.unc.comp301.Strategy;
-
-import org.unc.comp301.Strategy.Strategies.PlayStrategy;
+package org.unc.comp301.Strategies;
 
 public class Team  {
     private String name;

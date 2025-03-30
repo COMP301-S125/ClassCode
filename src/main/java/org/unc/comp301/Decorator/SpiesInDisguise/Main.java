@@ -12,6 +12,10 @@ public class Main {
     perry = new Inator(perry);
 
     System.out.println(perry.getDescription());
+    System.out.println("Perry puts on his hat!");
+    perry.takeOffDisguise();
+
+    System.out.println(perry.getDescription());
 
   }
 }
