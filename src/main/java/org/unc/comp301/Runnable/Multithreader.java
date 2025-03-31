@@ -2,7 +2,7 @@ package org.unc.comp301.Runnable;
 
 public class Multithreader {
   public static void main(String[] args) {
-    example4();
+    example1();
   }
 
   public static void example1() {
