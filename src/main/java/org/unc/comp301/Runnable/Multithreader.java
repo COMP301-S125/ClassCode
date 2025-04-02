@@ -2,7 +2,11 @@ package org.unc.comp301.Runnable;
 
 public class Multithreader {
   public static void main(String[] args) {
-    example1();
+      try {
+          example5();
+      } catch (InterruptedException e) {
+          throw new RuntimeException(e);
+      }
   }
 
   public static void example1() {

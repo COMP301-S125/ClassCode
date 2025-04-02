@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class ParaDemo {
     public static void main(String[] args) {
-        //System.out.println(Runtime.getRuntime().availableProcessors()); //Runtime is a singleton!
+        System.out.println(Runtime.getRuntime().availableProcessors()); //Runtime is a singleton!
 
         for (int num_threads = 1; num_threads <= 24; num_threads++) {
             int num_items = 1000000000;//One hundred million
