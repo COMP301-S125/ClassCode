@@ -8,15 +8,15 @@ public class Counter {
     }
 
     //add Synchronized to avoid race conditions.
-    public void  addOne() {
+    public synchronized void addOne() {
         value = getValue() + 1;
     }
 
-    public void subtractOne() {
+    public synchronized void subtractOne() {
         value = getValue() - 1;
     }
 
-    public int getValue() {
+    public synchronized int getValue() {
         return value;
     }
 
