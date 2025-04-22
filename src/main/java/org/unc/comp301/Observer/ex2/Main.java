@@ -13,17 +13,44 @@ public class Main {
     // Create fan objects (observers)
     UNCFan tar_heel = new UNCFan();
     DukeFan dookie = new DukeFan();
+    Fan prof = new Fan(){
+
+      @Override
+      public void update(Game g) {
+        if(g.whoIsWinning().equals("UNC")){
+          cheerForUNC();
+        }else if(g.whoIsWinning().equals("NCState")){
+          cheerForNCState();
+        }
+      }
+      private void cheerForUNC(){
+        System.out.println("Go Heels!");
+      }
+      private void cheerForNCState(){
+        System.out.println("Go WolfPack!");
+      }
+    };
+
+//    Fan prof = (Game g) -> {
+//      if (g.whoIsWinning().equals("UNC")) {
+//        System.out.println("UNC Fan: Go Heels!");
+//      } else if(g.whoIsWinning().equals("NC State")){
+//        System.out.println("NC State Fan: Go Wolfpack!");
+//      }
+//    };
+
 
     // Register observers
     for (Game g : games) {
       g.addObserver(tar_heel);
       g.addObserver(dookie);
+      g.addObserver(prof);
     }
 
 
-//    games[0].scorePoints("UNC", 2);
-//    games[1].scorePoints("NCState", 2);
-    
+
+
+
     // Allow the program user to score points
     Scanner s = new Scanner(System.in);
     while (s.hasNext()) {
