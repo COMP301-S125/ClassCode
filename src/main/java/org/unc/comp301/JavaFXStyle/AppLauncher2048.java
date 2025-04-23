@@ -7,8 +7,15 @@ import javafx.stage.Stage;
 public class AppLauncher2048 extends Application {
     @Override
     public void start(Stage stage) throws Exception {
+        //title
+        stage.setTitle("Play 2048!");
+        View view = new View();
 
-        // Show the Stage on the screen
+        Scene scene = new Scene(view.render(),350,450);
+        scene.getStylesheets().add("main.css");
+
+        stage.setScene(scene);
+
         stage.show();
     }
 
