@@ -11,7 +11,30 @@ public class DecimalPracticeTest {
 
   @Test
   public void timesThree() {
-    //assertEquals(0.3, DecimalPractice.timesThree(.1)); <- doesn't work.
-    assertTrue(Math.abs(0.3-DecimalPractice.timesThree(.1)) < EPSILON);
+    assertEquals(0.3, DecimalPractice.timesThree(.1), EPSILON); // <-
+    assertTrue(Math.abs(0.3 - DecimalPractice.timesThree(0.1))<EPSILON);;
+
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//assertTrue(Math.abs(0.3-DecimalPractice.timesThree(.1)) < EPSILON);

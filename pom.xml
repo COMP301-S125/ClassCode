@@ -44,7 +44,7 @@
             <artifactId>javafx-maven-plugin</artifactId>
             <version>0.0.5</version>
             <configuration>
-                <mainClass>org.unc.comp301.JavaFXStyle.AppLauncher2048</mainClass>
+                <mainClass>org.unc.comp301.JavaFX.AppLauncher</mainClass>
             </configuration>
         </plugin>
     </plugins>
