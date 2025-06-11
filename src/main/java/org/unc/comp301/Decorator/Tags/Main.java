@@ -12,6 +12,7 @@ public class Main {
         System.out.println(clearance.getAmount());
         System.out.println(finalSale.getAmount());
 
+
         System.out.println(finalSale.unwrap().getAmount());
     }
 }

@@ -19,7 +19,7 @@ public class DiscountedPriceTag implements PriceTag {
 
     @Override
     public PriceTag unwrap() {
-        return this.tag.unwrap();
+        return tag.unwrap();
     }
 
 
