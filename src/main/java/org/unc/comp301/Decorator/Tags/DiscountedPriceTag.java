@@ -1,8 +1,8 @@
 package org.unc.comp301.Decorator.Tags;
 
 public class DiscountedPriceTag implements PriceTag {
-    private PriceTag tag;
-    private double discount;
+    private final PriceTag tag;
+    private final double discount;
 
     public DiscountedPriceTag(PriceTag tag, double discount) {
         this.tag = tag;

@@ -10,7 +10,7 @@ public class IteratorExamples implements Iterable<String>{
         return new SortedIterator();
     }
 
-    public Iterator<String> simpleIterator(){
+    public Iterator<String> SimpleIterator(){
         return new Simpleterator();
     }
 
@@ -32,7 +32,7 @@ public class IteratorExamples implements Iterable<String>{
     }
 
     private class DelegatedIterator implements Iterator<java.lang.String>{
-        private Iterator<java.lang.String> it = items.iterator();
+        private final Iterator<java.lang.String> it = items.iterator();
         @Override
         public boolean hasNext() {
            return it.hasNext();
@@ -44,9 +44,9 @@ public class IteratorExamples implements Iterable<String>{
         }
     }
 
-    private class SortedIterator implements Iterator<java.lang.String>{
-        private List<java.lang.String> sortedCollection;
-        private Iterator<java.lang.String> it;
+    private class SortedIterator implements Iterator<String>{
+        private final List<String> sortedCollection;
+        private final Iterator<String> it;
         public SortedIterator(){
             sortedCollection = new ArrayList<>(items);
             Collections.sort(sortedCollection);
@@ -56,12 +56,12 @@ public class IteratorExamples implements Iterable<String>{
 
         @Override
         public boolean hasNext() {
-            return false;
+            return it.hasNext();
         }
 
         @Override
-        public java.lang.String next() {
-            return "";
+        public String next() {
+            return it.next();
         }
     }
 
