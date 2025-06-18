@@ -16,9 +16,11 @@ public class Main {
 
             db.add(new Agent(name, threat,atLarge));
         }
+
         db.sort(Comparator.comparingInt(Agent::getThreatLevel).reversed());
 
-//        db.sort(new AgentComparator().reversed());
+        //db.sort(new AgentComparator().reversed());
+
         for(Agent a : db){
             System.out.println(a);
         }
